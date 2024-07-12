@@ -14,3 +14,7 @@ def details(request, id):
     template = loader.get_template('details.html')
     membersDict = {'member' : member}
     return HttpResponse(template.render(membersDict, request))
+
+def main(request):
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render())
