@@ -3,6 +3,7 @@
 <head>
   <title>{% block title %}{% endblock %}</title>
 </head>
+{% include "navbar.html" with me="Qiniso" sponsor="Upwards and Onwards" %}
 <body>
 
 <p><a href="/">Home</a></p>
@@ -10,4 +11,5 @@
 {% endblock %}
 
 </body>
+{% include "footer.html" %}
 </html>

@@ -11,6 +11,10 @@
     <ul>
         {% for member in members %}
             <li><a href="details/{{member.id}}">{{member.first_name}} {{member.last_name}}</a></li>
+        {% empty %}
+            <p>
+              There are no members currently.
+            </p>
         {% endfor %}
     </ul>
 
